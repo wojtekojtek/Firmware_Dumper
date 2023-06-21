@@ -264,7 +264,7 @@ jobs:
 
           tags: true
 
-          github_token: ${{ secrets.TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload release assets
 
@@ -274,7 +274,7 @@ jobs:
 
         env:
 
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
         with:
 
